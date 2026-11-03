@@ -6,6 +6,9 @@ namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO
   internal class LoginResponseDTO : ResponseDTO
   {
     public string token;
+    //revisado y aprovado por Marcos Escobar
+    public string perfil = "";
+    public string nombre = "";
 
     public LoginResponseDTO(
       EstadosEnum estado,
@@ -26,6 +29,7 @@ namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO
       this.token = token;
     }
 
+    //revisado y aprovado por Marcos Escobar
     public static new LoginResponseDTO FromJSON(string json)
     {
       ResponseDTO response = ResponseDTO.FromJSON(json);
@@ -41,7 +45,11 @@ namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO
         response.GetEstado(),
         response.GetMensaje(),
         token
-      );
+      )
+      {
+        perfil = LeerTexto(obj, "perfil"),
+        nombre = LeerTexto(obj, "nombre")
+      };
     }
   }
 }

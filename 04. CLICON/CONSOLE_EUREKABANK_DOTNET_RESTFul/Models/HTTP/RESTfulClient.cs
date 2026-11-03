@@ -1,4 +1,6 @@
 ﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
+//revisado y aprovado por Marcos Escobar
+using CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,12 +9,18 @@ namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.HTTP
 {
   internal class RESTfulClient
   {
-    private string baseUrl = "http://localhost:5088";
+    //revisado y aprovado por Marcos Escobar
+    private string baseUrl = ConfigHTTP.BaseUrl;
     private HttpClient http;
 
+    //revisado y aprovado por Marcos Escobar
+    // Deja de esperar a los 15 segundos (RNF-007).
     public RESTfulClient()
     {
-      this.http = new HttpClient();
+      this.http = ConfigHTTP.Handler is null
+        ? new HttpClient()
+        : new HttpClient(ConfigHTTP.Handler, false);
+      this.http.Timeout = ConfigHTTP.Timeout;
     }
 
     public async Task<string> GetAsync(string endpoint)

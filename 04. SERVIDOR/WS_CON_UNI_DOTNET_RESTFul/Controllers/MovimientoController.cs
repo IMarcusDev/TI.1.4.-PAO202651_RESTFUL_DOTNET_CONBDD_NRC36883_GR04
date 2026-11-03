@@ -1,9 +1,9 @@
-﻿using WS_CON_UNI_DOTNET_SOAP.Models.Data;
-using WS_CON_UNI_DOTNET_SOAP.Models.Interfaces;
-using WS_CON_UNI_DOTNET_SOAP.Models.Repositories;
+﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Repositories;
 using System.Collections.Generic;
 
-namespace WS_CON_UNI_DOTNET_SOAP.Controllers
+namespace WS_CON_UNI_DOTNET_RESTFul.Controllers
 {
   public class MovimientoController
   {

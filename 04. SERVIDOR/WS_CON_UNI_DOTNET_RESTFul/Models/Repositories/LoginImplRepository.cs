@@ -1,9 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
-using WS_CON_UNI_DOTNET_SOAP.Config;
-using WS_CON_UNI_DOTNET_SOAP.Models.Data;
-using WS_CON_UNI_DOTNET_SOAP.Models.Interfaces;
+using WS_CON_UNI_DOTNET_RESTFul.Config;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces;
 
-namespace WS_CON_UNI_DOTNET_SOAP.Models.Repositories
+namespace WS_CON_UNI_DOTNET_RESTFul.Models.Repositories
 {
   public class LoginImplRepository : ILoginRepository
   {

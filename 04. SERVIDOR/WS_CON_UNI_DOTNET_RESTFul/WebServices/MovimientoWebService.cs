@@ -1,22 +1,22 @@
-﻿using WS_CON_UNI_DOTNET_SOAP.Controllers;
-using WS_CON_UNI_DOTNET_SOAP.Models.Data;
-using WS_CON_UNI_DOTNET_SOAP.Models.DTO;
-using WS_CON_UNI_DOTNET_SOAP.Models.Enums;
-using WS_CON_UNI_DOTNET_SOAP.Services;
-using WS_CON_UNI_DOTNET_SOAP.WS.Interfaces;
+﻿using WS_CON_UNI_DOTNET_RESTFul.Controllers;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+using WS_CON_UNI_DOTNET_RESTFul.Models.DTO;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Enums;
+using WS_CON_UNI_DOTNET_RESTFul.Services;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
+namespace WS_CON_UNI_DOTNET_RESTFul.WebServices
 {
-  public class MovimientoWebService : IMovimientoWebService
+  [ApiController]
+  [Route("Movimiento")]
+  public class MovimientoWebService : ControllerBase
   {
+    [HttpPost("Deposito")]
     public MovimientoResponseDTO Deposito(
-      string token,
-      string cuentaOrigen,
-      string cuentaDestino,
-      double valor
+      [FromBody] MovimientoRequestDTO request
     )
     {
-      if (!TokenService.ValidateToken(token))
+      if (!TokenService.ValidateToken(request.Token))
         return new MovimientoResponseDTO
         {
           Estado = EstadosEnum.ERROR,
@@ -26,15 +26,17 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
       try
       {
         Movimiento movimiento = MovimientoController.RegisterDeposito(
-          new Movimiento {
+          new Movimiento
+          {
             Tipo = "DEPOSITO",
-            CuentaOrigen = cuentaOrigen,
-            CuentaDestino = cuentaDestino,
-            Valor = valor
+            CuentaOrigen = request.CuentaOrigen,
+            CuentaDestino = request.CuentaDestino,
+            Valor = request.Valor
           }
         );
 
-        return new MovimientoResponseDTO {
+        return new MovimientoResponseDTO
+        {
           Estado = EstadosEnum.OK,
           Mensaje = "Depósito registrado exitosamente",
           IdMovimiento = int.Parse(movimiento.Id)
@@ -45,19 +47,17 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
         return new MovimientoResponseDTO
         {
           Estado = EstadosEnum.ERROR,
-          Mensaje = e.Message,
+          Mensaje = e.Message
         };
       }
     }
 
+    [HttpPost("Retiro")]
     public MovimientoResponseDTO Retiro(
-      string token,
-      string cuentaOrigen,
-      string cuentaDestino,
-      double valor
+      [FromBody] MovimientoRequestDTO request
     )
     {
-      if (!TokenService.ValidateToken(token))
+      if (!TokenService.ValidateToken(request.Token))
         return new MovimientoResponseDTO
         {
           Estado = EstadosEnum.ERROR,
@@ -67,11 +67,12 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
       try
       {
         Movimiento movimiento = MovimientoController.RegisterRetiro(
-          new Movimiento {
+          new Movimiento
+          {
             Tipo = "RETIRO",
-            CuentaOrigen = cuentaOrigen,
-            CuentaDestino = cuentaDestino,
-            Valor = valor
+            CuentaOrigen = request.CuentaOrigen,
+            CuentaDestino = request.CuentaDestino,
+            Valor = request.Valor
           }
         );
 
@@ -84,21 +85,20 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
       }
       catch (Exception e)
       {
-        return new MovimientoResponseDTO {
+        return new MovimientoResponseDTO
+        {
           Estado = EstadosEnum.ERROR,
           Mensaje = e.Message
         };
       }
     }
 
+    [HttpPost("Transferencia")]
     public MovimientoResponseDTO Transferencia(
-      string token,
-      string cuentaOrigen,
-      string cuentaDestino,
-      double valor
+      [FromBody] MovimientoRequestDTO request
     )
     {
-      if (!TokenService.ValidateToken(token))
+      if (!TokenService.ValidateToken(request.Token))
         return new MovimientoResponseDTO
         {
           Estado = EstadosEnum.ERROR,
@@ -108,11 +108,12 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
       try
       {
         Movimiento movimiento = MovimientoController.RegisterTransferencia(
-          new Movimiento {
+          new Movimiento
+          {
             Tipo = "TRANSFERENCIA",
-            CuentaOrigen = cuentaOrigen,
-            CuentaDestino = cuentaDestino,
-            Valor = valor
+            CuentaOrigen = request.CuentaOrigen,
+            CuentaDestino = request.CuentaDestino,
+            Valor = request.Valor
           }
         );
 
@@ -128,7 +129,7 @@ namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
         return new MovimientoResponseDTO
         {
           Estado = EstadosEnum.ERROR,
-          Mensaje = e.Message,
+          Mensaje = e.Message
         };
       }
     }

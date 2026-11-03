@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WS_CON_UNI_DOTNET_SOAP.Services
+namespace WS_CON_UNI_DOTNET_RESTFul.Services
 {
   public class TokenService
   {

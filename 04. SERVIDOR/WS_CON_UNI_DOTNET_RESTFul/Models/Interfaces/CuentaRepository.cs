@@ -1,6 +1,6 @@
-﻿using WS_CON_UNI_DOTNET_SOAP.Models.Data;
+﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
 
-namespace WS_CON_UNI_DOTNET_SOAP.Models.Interfaces
+namespace WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces
 {
   public interface ICuentaRepository
   {

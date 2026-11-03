@@ -1,22 +1,25 @@
-﻿using WS_CON_UNI_DOTNET_SOAP.Controllers;
-using WS_CON_UNI_DOTNET_SOAP.Models.Data;
-using WS_CON_UNI_DOTNET_SOAP.Models.DTO;
-using WS_CON_UNI_DOTNET_SOAP.Models.Enums;
-using WS_CON_UNI_DOTNET_SOAP.Services;
-using WS_CON_UNI_DOTNET_SOAP.WS.Interfaces;
+﻿using WS_CON_UNI_DOTNET_RESTFul.Controllers;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+using WS_CON_UNI_DOTNET_RESTFul.Models.DTO;
+using WS_CON_UNI_DOTNET_RESTFul.Models.Enums;
+using WS_CON_UNI_DOTNET_RESTFul.Services;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WS_CON_UNI_DOTNET_SOAP.WS.Services
+namespace WS_CON_UNI_DOTNET_RESTFul.WebServices
 {
-  public class LoginWebService : ILoginWebService
+  [ApiController]
+  [Route("Login")]
+  public class LoginWebService : ControllerBase
   {
-    public LoginResponseDTO Login(string username, string password)
+    [HttpPost]
+    public LoginResponseDTO Login([FromBody] LoginRequestDTO request)
     {
       try
       {
-        Perfil p = LoginController.GetPerfil(username);
+        Perfil p = LoginController.GetPerfil(request.Username);
         Usuario u = LoginController.GetUsuarioById(p.Id);
 
-        if (!HashService.VerifyPassword(password, p.PasswordHash))
+        if (!HashService.VerifyPassword(request.Password, p.PasswordHash))
           throw new Exception("Contraseña incorrecta");
 
         string token = TokenService.GenerateToken();

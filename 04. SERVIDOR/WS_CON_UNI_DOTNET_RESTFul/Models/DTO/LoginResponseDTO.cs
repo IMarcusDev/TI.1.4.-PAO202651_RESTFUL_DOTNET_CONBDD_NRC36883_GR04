@@ -1,4 +1,4 @@
-﻿namespace WS_CON_UNI_DOTNET_SOAP.Models.DTO
+﻿namespace WS_CON_UNI_DOTNET_RESTFul.Models.DTO
 {
   public class LoginResponseDTO : ResponseDTO
   {

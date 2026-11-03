@@ -1,10 +1,16 @@
 ﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+//revisado y aprovado por Marcos Escobar
+using Microsoft.Data.SqlClient;
 
 namespace WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces
 {
   public interface ICuentaRepository
   {
     public abstract Cuenta GetCuenta(string id);
-    public abstract Cuenta UpdateCuenta(Cuenta c);
+    //revisado y aprovado por Marcos Escobar
+    // Lee la cuenta y bloquea su fila hasta que termine la transacción. Devuelve null si no existe.
+    public abstract Cuenta? GetCuentaParaActualizar(SqlConnection connection, SqlTransaction transaction, string id);
+    //revisado y aprovado por Marcos Escobar
+    public abstract Cuenta UpdateCuenta(SqlConnection connection, SqlTransaction transaction, Cuenta c);
   }
 }

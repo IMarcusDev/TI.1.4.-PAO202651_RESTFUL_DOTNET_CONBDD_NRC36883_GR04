@@ -1,0 +1,8 @@
+﻿namespace WS_CON_UNI_DOTNET_RESTFul.Models.Data
+{
+  public class Cuenta
+  {
+    public string Id { get; set; } = "";
+    public double Saldo { get; set; }
+  }
+}

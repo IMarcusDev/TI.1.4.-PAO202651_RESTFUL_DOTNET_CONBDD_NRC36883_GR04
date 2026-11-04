@@ -1,7 +1,7 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
 using System.Text.Json;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO
+namespace CONSOLE_EUREKABANK_DOTNET_RESTful.Models.DTO
 {
   internal class LoginResponseDTO : ResponseDTO
   {

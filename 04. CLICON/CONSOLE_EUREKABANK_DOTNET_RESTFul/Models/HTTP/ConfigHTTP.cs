@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.HTTP
 {
   internal class ConfigHTTP
   {

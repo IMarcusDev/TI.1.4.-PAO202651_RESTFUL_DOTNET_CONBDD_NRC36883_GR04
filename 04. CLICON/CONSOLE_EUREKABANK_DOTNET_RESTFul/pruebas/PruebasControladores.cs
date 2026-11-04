@@ -2,11 +2,11 @@
 using System.Net;
 using System.Text;
 using System.Text.Json;
-using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP;
+using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.HTTP;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Pruebas;
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Pruebas;
 
 /// <summary>Reemplaza la red: guarda la última petición y devuelve la respuesta preparada.</summary>
 internal sealed class ServidorFalso : HttpMessageHandler

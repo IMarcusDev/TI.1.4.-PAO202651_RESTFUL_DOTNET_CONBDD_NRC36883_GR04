@@ -1,6 +1,0 @@
-@WS_CON_UNI_DOTNET_RESTFul_HostAddress = http://localhost:5088
-
-GET {{WS_CON_UNI_DOTNET_RESTFul_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

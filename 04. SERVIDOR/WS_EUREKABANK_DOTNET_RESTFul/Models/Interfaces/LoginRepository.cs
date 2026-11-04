@@ -1,6 +1,6 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces
+namespace WS_EUREKABANK_DOTNET_RESTFul.Models.Interfaces
 {
   public interface ILoginRepository
   {

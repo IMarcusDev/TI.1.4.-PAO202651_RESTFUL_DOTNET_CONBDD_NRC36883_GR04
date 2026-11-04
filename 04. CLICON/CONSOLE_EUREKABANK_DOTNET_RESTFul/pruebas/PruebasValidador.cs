@@ -1,8 +1,8 @@
 //revisado y aprovado por Marcos Escobar
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Views.Utils;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Views.Utils;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Pruebas;
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Pruebas;
 
 internal static class PruebasValidador
 {

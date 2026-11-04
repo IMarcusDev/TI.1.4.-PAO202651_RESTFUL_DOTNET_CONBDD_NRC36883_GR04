@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Services
+namespace WS_EUREKABANK_DOTNET_RESTFul.Services
 {
   public class TokenService
   {

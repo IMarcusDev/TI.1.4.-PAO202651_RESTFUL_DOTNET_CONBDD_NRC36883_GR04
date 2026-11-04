@@ -1,0 +1,6 @@
+@WS_EUREKABANK_DOTNET_RESTFul_HostAddress = http://localhost:5088
+
+GET {{WS_EUREKABANK_DOTNET_RESTFul_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

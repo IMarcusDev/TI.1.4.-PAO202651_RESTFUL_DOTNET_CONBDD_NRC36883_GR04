@@ -1,11 +1,11 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO;
-using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
-using CONSOLE_CON_UNI_DOTNET_RESTful.Models.HTTP;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Models.Data;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.DTO;
+using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
+using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.HTTP;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.Data;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.HTTP;
 using System.Text.Json;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers
 {
   internal class LoginController
   {

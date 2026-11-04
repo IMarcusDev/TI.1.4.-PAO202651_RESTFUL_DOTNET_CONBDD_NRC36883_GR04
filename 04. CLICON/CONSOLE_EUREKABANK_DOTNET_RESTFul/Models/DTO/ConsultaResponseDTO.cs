@@ -1,7 +1,7 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
 using System.Text.Json;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO
+namespace CONSOLE_EUREKABANK_DOTNET_RESTful.Models.DTO
 {
   /// <summary>Respuesta de consultarMovimientos: los datos de la cuenta y la lista de sus movimientos.</summary>
   //revisado y aprovado por Marcos Escobar

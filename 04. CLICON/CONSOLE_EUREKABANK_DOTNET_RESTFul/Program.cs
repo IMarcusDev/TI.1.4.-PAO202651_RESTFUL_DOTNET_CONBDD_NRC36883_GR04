@@ -1,6 +1,6 @@
 ﻿
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Views;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Views.Utils;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Views;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Views.Utils;
 
 //revisado y aprovado por Marcos Escobar
 // Acentos de los mensajes del servidor y el arte de inicio.
@@ -9,7 +9,7 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 //revisado y aprovado por Marcos Escobar
 // Dirección del servidor opcional: dotnet run -- http://<ip>:<puerto>
 if (args.Length > 0)
-  CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP.ConfigHTTP.BaseUrl = args[0].TrimEnd('/');
+  CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.HTTP.ConfigHTTP.BaseUrl = args[0].TrimEnd('/');
 
 // Splash Art
 MessagesUtils.PrintMonster();

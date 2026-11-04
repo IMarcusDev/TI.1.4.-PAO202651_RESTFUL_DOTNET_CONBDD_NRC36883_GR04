@@ -1,4 +1,4 @@
-﻿namespace WS_CON_UNI_DOTNET_RESTFul.Models.DTO
+﻿namespace WS_EUREKABANK_DOTNET_RESTFul.Models.DTO
 {
   /// <summary>Respuesta de consultarMovimientos: los datos de la cuenta y sus movimientos.</summary>
   //revisado y aprovado por Marcos Escobar

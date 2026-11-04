@@ -1,9 +1,9 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO;
-using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers;
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Views.Utils;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.DTO;
+using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Views.Utils;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Views
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Views
 {
   internal class LoginView
   {

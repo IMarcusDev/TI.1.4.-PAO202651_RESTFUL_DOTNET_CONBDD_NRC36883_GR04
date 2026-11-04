@@ -1,11 +1,11 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.DTO;
-using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.DTO;
+using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Models.DTO
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.DTO
 {
   internal class MovimientoResponseDTO : ResponseDTO
   {

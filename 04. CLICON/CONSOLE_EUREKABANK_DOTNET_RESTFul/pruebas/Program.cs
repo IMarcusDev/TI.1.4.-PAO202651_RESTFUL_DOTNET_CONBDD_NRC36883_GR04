@@ -1,5 +1,5 @@
 //revisado y aprovado por Marcos Escobar
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Pruebas;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Pruebas;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 

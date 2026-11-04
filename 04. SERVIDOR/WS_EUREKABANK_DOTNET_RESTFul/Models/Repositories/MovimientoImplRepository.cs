@@ -1,10 +1,10 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
-using WS_CON_UNI_DOTNET_RESTFul.Config;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces;
+using WS_EUREKABANK_DOTNET_RESTFul.Config;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Interfaces;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Models.Repositories
+namespace WS_EUREKABANK_DOTNET_RESTFul.Models.Repositories
 {
   public class MovimientoImplRepository : IMovimientoRepository
   {

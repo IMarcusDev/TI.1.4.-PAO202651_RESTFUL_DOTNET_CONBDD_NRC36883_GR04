@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers;
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers;
 
 //revisado y aprovado por Marcos Escobar
 /// <summary>Validación de formato en el cliente (ERS 9.1.1 y ECUD). El servidor repite todas las reglas.</summary>

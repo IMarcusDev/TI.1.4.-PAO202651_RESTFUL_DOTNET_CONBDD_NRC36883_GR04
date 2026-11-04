@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Services
+namespace WS_EUREKABANK_DOTNET_RESTFul.Services
 {
   public class HashService
   {

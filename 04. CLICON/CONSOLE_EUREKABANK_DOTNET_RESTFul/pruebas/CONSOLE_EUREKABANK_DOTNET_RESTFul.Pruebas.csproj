@@ -7,7 +7,7 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>CONSOLE_CON_UNI_DOTNET_RESTFul.Pruebas</RootNamespace>
+		<RootNamespace>CONSOLE_EUREKABANK_DOTNET_RESTFul.Pruebas</RootNamespace>
 	</PropertyGroup>
 
 	<!-- Enlaza el código del cliente (todo menos Program.cs). -->

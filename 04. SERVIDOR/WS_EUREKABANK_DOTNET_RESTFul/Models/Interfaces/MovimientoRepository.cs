@@ -1,8 +1,8 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
 //revisado y aprovado por Marcos Escobar
 using Microsoft.Data.SqlClient;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces
+namespace WS_EUREKABANK_DOTNET_RESTFul.Models.Interfaces
 {
   public interface IMovimientoRepository
   {

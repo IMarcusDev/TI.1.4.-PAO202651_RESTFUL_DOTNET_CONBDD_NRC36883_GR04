@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Views.Utils
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Views.Utils
 {
   internal class MessagesUtils
   {

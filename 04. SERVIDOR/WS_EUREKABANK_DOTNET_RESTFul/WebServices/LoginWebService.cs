@@ -1,11 +1,11 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Controllers;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
-using WS_CON_UNI_DOTNET_RESTFul.Models.DTO;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Enums;
-using WS_CON_UNI_DOTNET_RESTFul.Services;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Controllers;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.DTO;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Enums;
+using WS_EUREKABANK_DOTNET_RESTFul.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.WebServices
+namespace WS_EUREKABANK_DOTNET_RESTFul.WebServices
 {
   [ApiController]
   [Route("Login")]

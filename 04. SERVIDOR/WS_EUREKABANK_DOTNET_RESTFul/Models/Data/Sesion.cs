@@ -1,4 +1,4 @@
-﻿namespace WS_CON_UNI_DOTNET_RESTFul.Models.Data
+﻿namespace WS_EUREKABANK_DOTNET_RESTFul.Models.Data
 {
   /// <summary>
   /// Dueño de un token: el perfil (EMPLEADO o CLIENTE) y el código del empleado

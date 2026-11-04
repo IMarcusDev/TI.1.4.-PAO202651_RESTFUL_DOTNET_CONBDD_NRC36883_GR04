@@ -1,13 +1,13 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Controllers;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
-using WS_CON_UNI_DOTNET_RESTFul.Models.DTO;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Enums;
-using WS_CON_UNI_DOTNET_RESTFul.Services;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Controllers;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.DTO;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Enums;
+using WS_EUREKABANK_DOTNET_RESTFul.Services;
 using Microsoft.AspNetCore.Mvc;
 //revisado y aprovado por Marcos Escobar
 using Microsoft.Data.SqlClient;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.WebServices
+namespace WS_EUREKABANK_DOTNET_RESTFul.WebServices
 {
   [ApiController]
   [Route("Movimiento")]

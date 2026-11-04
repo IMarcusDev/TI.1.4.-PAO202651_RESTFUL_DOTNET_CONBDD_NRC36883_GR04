@@ -1,13 +1,13 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Data;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Interfaces;
-using WS_CON_UNI_DOTNET_RESTFul.Models.Repositories;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Models.Data;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Interfaces;
+using WS_EUREKABANK_DOTNET_RESTFul.Models.Repositories;
 using System.Collections.Generic;
 //revisado y aprovado por Marcos Escobar
 using Microsoft.Data.SqlClient;
-using WS_CON_UNI_DOTNET_RESTFul.Config;
-using WS_CON_UNI_DOTNET_RESTFul.Services;
+using WS_EUREKABANK_DOTNET_RESTFul.Config;
+using WS_EUREKABANK_DOTNET_RESTFul.Services;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Controllers
+namespace WS_EUREKABANK_DOTNET_RESTFul.Controllers
 {
   public class MovimientoController
   {

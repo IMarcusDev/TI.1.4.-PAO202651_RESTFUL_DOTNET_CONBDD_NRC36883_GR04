@@ -1,4 +1,4 @@
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Pruebas;
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Pruebas;
 
 public class FalloPrueba(string mensaje) : Exception(mensaje);
 

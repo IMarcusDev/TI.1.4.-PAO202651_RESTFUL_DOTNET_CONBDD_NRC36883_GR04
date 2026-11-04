@@ -1,11 +1,11 @@
-﻿using CONSOLE_CON_UNI_DOTNET_RESTful.Models.Enums;
+﻿using CONSOLE_EUREKABANK_DOTNET_RESTful.Models.Enums;
 //revisado y aprovado por Marcos Escobar
-using CONSOLE_CON_UNI_DOTNET_RESTFul.Models.HTTP;
+using CONSOLE_EUREKABANK_DOTNET_RESTFul.Models.HTTP;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTful.Models.HTTP
+namespace CONSOLE_EUREKABANK_DOTNET_RESTful.Models.HTTP
 {
   internal class RESTfulClient
   {

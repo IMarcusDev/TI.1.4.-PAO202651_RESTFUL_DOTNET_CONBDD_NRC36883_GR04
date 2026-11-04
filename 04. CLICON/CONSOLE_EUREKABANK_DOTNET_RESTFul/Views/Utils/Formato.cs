@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Views.Utils;
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Views.Utils;
 
 //revisado y aprovado por Marcos Escobar
 /// <summary>RNF-009: importes con dos decimales y la moneda de la cuenta; fechas con el formato dd/MM/yyyy HH:mm.</summary>

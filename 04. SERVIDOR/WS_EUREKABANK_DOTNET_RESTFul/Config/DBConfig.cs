@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Config
+namespace WS_EUREKABANK_DOTNET_RESTFul.Config
 {
   public class DBConfig
   {

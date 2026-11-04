@@ -1,6 +1,6 @@
-﻿using WS_CON_UNI_DOTNET_RESTFul.Models.Enums;
+﻿using WS_EUREKABANK_DOTNET_RESTFul.Models.Enums;
 
-namespace WS_CON_UNI_DOTNET_RESTFul.Models.DTO
+namespace WS_EUREKABANK_DOTNET_RESTFul.Models.DTO
 {
   public class ResponseDTO
   {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace CONSOLE_CON_UNI_DOTNET_RESTFul.Controllers
+namespace CONSOLE_EUREKABANK_DOTNET_RESTFul.Controllers
 {
   /// <summary>Mensajes del cliente cuando no hay respuesta válida del servidor (ECUD1-ECUD4), iguales a los del cliente móvil.</summary>
   //revisado y aprovado por Marcos Escobar

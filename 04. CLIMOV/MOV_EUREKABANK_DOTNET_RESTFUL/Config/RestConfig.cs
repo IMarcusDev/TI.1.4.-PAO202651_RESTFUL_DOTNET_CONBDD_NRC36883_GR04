@@ -6,7 +6,7 @@ public static class RestConfig
     /// Servidor REST de EurekaBank (WS_EUREKABANK_DOTNET_RESTFul, perfil http de launchSettings).
     /// 10.0.2.2 es el equipo anfitrión visto desde el emulador; en un celular físico use la IP del servidor.
     /// </summary>
-    public const string UrlBase = "http://10.0.2.2:5088/";
+    public const string UrlBase = "http://192.168.1.76:5088/";
 
     public const string RecursoLogin = "Login";
     public const string RecursoMovimiento = "Movimiento";
